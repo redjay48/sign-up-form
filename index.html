@@ -23,42 +23,51 @@
         <main id="content">
             <header>
                 <p class="para-1">This is not a real online service. You know you need something like this in your life
-                    to realise your deepest dreams. Sign up <span>now</span> to get started.</p>
-                <p class="para-2">You <span>know you</span> want to.</p>
+                    to realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p class="para-2">You <em>know</em> you want to.</p>
             </header>
-            <section id="form">
-                <div class="form-body">
+            <div id="form">
+
                     <fieldset class="form">
                         <legend>Let's do this!</legend>
-                        <div id="firstName">
-                            <label for="firstName">FIRST NAME</label>
-                            <input type="text" name="firstName" id="firstName">
-                        </div>
-                        <div id="lastName">
-                            <label for="lastName">LAST NAME</label>
-                            <input type="text" name="lastName" id="lastName">
-                        </div>
-                        <div id="email">
-                            <label for="email">EMAIL</label>
-                            <input type="text" name="email" id="email">
-                        </div>
-                        <div id="phone">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="text" name="phone" id="phone">
-                        </div>
-                        <div id="password">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-                        </div>
-                        <div id="confirm-pass">
-                            <label for="confirm-pass">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-pass" id="confirm-pass">
-                        </div>
+                        <section id="row1">
+                            <div id="firstName">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" name="firstName" id="firstName" required>
+                            </div>
+                            <div id="lastName">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" name="lastName" id="lastName" required>
+                            </div>
+                        </section>
+                        <section id="row2">
+                            <div id="email">
+                                <label for="email">EMAIL</label>
+                                <input type="text" name="email" id="email" required>
+                            </div>
+                            <div id="phone">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="text" name="phone" id="phone" required>
+                            </div>
+                        </section>
+                        <section id="row3">
+                            <div id="password">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div id="confirm-pass">
+                                <label for="confirm-pass">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm-pass" id="confirm-pass" required>
+                            </div>
+                        </section>
                     </fieldset>
 
 
                 </div>
-            </section>
+            <footer>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span><a href="">Log In</a></span></p>
+            </footer>
         </main>
     </div>
 
