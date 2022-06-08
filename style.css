@@ -53,12 +53,17 @@ table {
     src: url(fonts/Norse-Bold.otf) format("opentype");
 }
 
+html,body {
+    height: 100%;
+}
+
 body {
     border: 2px solid black;
 }
 
 #container {
     display: flex;
+    height: 100%;
 }
 
 input,label {
@@ -68,46 +73,63 @@ input,label {
 #content {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 header {
     text-align: left;
     line-height: 50px;
     background-color: rgb(241, 241, 241);
-    width: auto;
+    width: 100%;
     flex: 1;
+    padding-top: 150px;
 }
 section {
     flex: 1;
 }
 
+img {
+    max-width: 100%;
+}
+
+#image-container {
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size:100% 100%;
+    display: flex;
+    width: 30%;
+    max-width:100%;
+    max-height: 100vh;
+}
+
 .logo-card {
     display: flex;
-    flex-wrap: wrap;
     padding: 20px 0;
     background-color: rgb(0, 0, 0, 0.4);
-    width: 32.3%;
-    position: absolute;
+    height: fit-content;
+    width:100%;
+    margin-top: 200px;
     font-family: norse;
-    top: 180px;
     justify-content: center;
     align-items: center;
 }
 
 #odin-logo {
-    height: 150px;
+    height: 130px;
     color: white;
     opacity: 1;
 }
 
 #logo-text {
-    font-size: 120px;
+    font-size: 100px;
     color: white;
     opacity: 1;
 }
 
-#image {
-    max-width:100%;
-    max-height: 100vh;
-    height: auto;
+div#firstName, div#email, div#password {
+    float: left;
+    margin-right: 40px;
+}
+
+.form-body {
+    padding: 40px;
 }
