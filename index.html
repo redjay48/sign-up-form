@@ -32,31 +32,32 @@
                     <fieldset class="form">
                         <legend>Let's do this!</legend>
                         <section id="row1">
-                            <div id="firstName">
+                            <div>
                                 <label for="firstName">FIRST NAME</label>
                                 <input type="text" name="firstName" id="firstName" required>
                             </div>
-                            <div id="lastName">
+                            <div>
                                 <label for="lastName">LAST NAME</label>
                                 <input type="text" name="lastName" id="lastName" required>
                             </div>
                         </section>
                         <section id="row2">
-                            <div id="email">
+                            <div>
                                 <label for="email">EMAIL</label>
                                 <input type="email" name="email" id="email" required>
                             </div>
-                            <div id="phone">
+                            <div>
                                 <label for="phone">PHONE NUMBER</label>
                                 <input type="text" name="phone" id="phone" required>
                             </div>
                         </section>
                         <section id="row3">
-                            <div id="password">
+                            <div>
                                 <label for="password">PASSWORD</label>
                                 <input type="password" name="password" id="password" required>
+                                <span id="error-pass"></span>
                             </div>
-                            <div id="confirm-pass">
+                            <div>
                                 <label for="confirm-pass">CONFIRM PASSWORD</label>
                                 <input type="password" name="confirm-pass" id="confirm-pass" required>
                             </div>
@@ -73,7 +74,7 @@
         </form>
         </main>
     </div>
-
+<script src="main.js"></script>
 </body>
 
 </html>

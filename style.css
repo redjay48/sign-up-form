@@ -234,3 +234,12 @@ footer a {
     padding-left: 80px;
 
 }
+
+#error-pass {
+    color: red;
+    font-size: 15px;
+}
+
+.error-pass {
+    border: 1px solid rgb(255, 0, 0);
+}
